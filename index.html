@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Weather Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-space">
+          <div class="logo-placeholder">SolarScope</div>
+        </div>
+        <div>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="planets.html" class="nav-link ">Planets</a></li>
+          </ul>
+        </div>
+        <div class="space-button">
+          <a href="https://www.isro.gov.in/" target="_blank"><button class="cosmic-btn">Explore Space</button></a>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- main Page -->
+    <div id="main" class="page active">
+      <!-- main Section -->
+      <section class="main">
+        <div class="stars"></div>
+        <div class="moving-stars"></div>
+        <div class="main-content">
+          <h1 class="main-title">Space Weather Hub</h1>
+          <p class="main-subtitle">Monitoring the Cosmic Environment</p>
+          <div class="moon-satellite">
+            <div class="moon"></div>
+            <div class="satellite"></div>
+          </div>
+          <div class="solar-system-info">
+            <p class="system-text">Real-time solar system monitoring and space weather forecasting</p>
+            <p>"Space data provided by <strong><a href="https://api.nasa.gov/" target="_blank">NASA Open APIs</a></strong>"</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Solar Eclipse Section  -->
+      <section class="eclipse-section">
+        <div class="container">
+          <h2 class="section-title">Solar Eclipses & Phenomena</h2>
+          <div class="eclipse-grid">
+            <div class="eclipse-card">
+              <img src="assets/solar-eclipse.png" alt="Solar Eclipse" class="eclipse-image">
+              <div class="eclipse-content">
+                <h3>Total Solar Eclipse</h3>
+                <p>Experience the breathtaking moment when the Moon completely covers the Sun, revealing the solar
+                  corona in all its glory.</p>
+              </div>
+            </div>
+            <div class="eclipse-card">
+              <img src="assets/partical-eclipse.png" alt="Partial Eclipse" class="eclipse-image">
+              <div class="eclipse-content">
+                <h3>Partial Solar Eclipse</h3>
+                <p>Witness the celestial dance as the Moon partially obscures the Sun, creating stunning crescent
+                  shadows on Earth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Space Weather Cards -->
+      <section class="weather-cards">
+        <div class="container">
+          <h2 class="section-title">Current Space Weather</h2>
+          <div class="cards-grid">
+            <div class="weather-card solar-flare">
+              <div class="card-icon">🌟</div>
+              <h3>Solar Flare Activity</h3>
+              <div class="card-data">
+                <p class="data-placeholder">Loading solar flare data...</p>
+              </div>
+              <div class="card-status">
+                <span class="status-indicator"></span>
+                <span>Monitoring</span>
+              </div>
+            </div>
+
+            <div class="weather-card geomagnetic">
+              <div class="card-icon">🧲</div>
+              <h3>Geomagnetic Storm Level</h3>
+              <div class="card-data">
+                <p class="data-placeholder">Loading storm level...</p>
+              </div>
+              <div class="card-status">
+                <span class="status-indicator"></span>
+                <span>Quiet</span>
+              </div>
+            </div>
+
+            <div class="weather-card aurora">
+              <div class="card-icon">🌌</div>
+              <h3>Aurora Forecast</h3>
+              <div class="card-data">
+                <!-- API data will be inserted here -->
+                <p class="data-placeholder">Loading aurora forecast...</p>
+              </div>
+              <div class="card-status">
+                <span class="status-indicator"></span>
+                <span>Active</span>
+              </div>
+            </div>
+
+            <div class="weather-card solar-wind">
+              <div class="card-icon">💨</div>
+              <h3>Solar Wind Speed</h3>
+              <div class="card-data">
+                <p class="data-placeholder"></p>
+              </div>
+              <div class="card-status">
+                <span class="status-indicator"></span>
+                <span>Normal</span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Events -->
+      <section class="recent-events">
+        <div class="container">
+          <h2 class="section-title">Recent Solar System Events</h2>
+          <div class="events-timeline">
+            <!-- prototype general data to show  -->
+            <div class="event-item">
+              <div class="event-date">Today</div>
+              <div class="event-content">
+                <p class="eventData"></p>
+                <h2>!! This Fetching Takes Time !!</h2>
+                <div class="loading-animation event-fetching-animation">
+                  <h4>Fetching Events Data</h4>
+                  <div class="loading-dot"></div>
+                  <div class="loading-dot"></div>
+                  <div class="loading-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+  </body>
+
+</html>

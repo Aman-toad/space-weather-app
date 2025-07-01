@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Weather Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap"
+      rel="stylesheet">
+  </head>
+  <link rel="stylesheet" href="style.css">
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-space">
+          <div class="logo-placeholder">LOGO</div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link active">Planets</a></li>
+        </ul>
+        <div class="space-button">
+          <button class="cosmic-btn">Explore Space</button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="planets" class="page">
+      <section class="planets-hero">
+        <div class="container">
+          <h1 class="hero-title">Solar System Planets</h1>
+          <p class="page-subtitle">Explore the celestial bodies in our cosmic neighborhood</p>
+        </div>
+      </section>
+
+      <section class="planets-content">
+        <div class="container">
+          <!-- Mercury -->
+          <div class="planet-card">
+            <div class="planet-image">
+              <img src="assets/mercury.png?height=300&width=300" alt="Mercury" class="planet-img">
+            </div>
+            <div class="planet-info">
+              <h3>Mercury</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                <button class="planet-btn" onclick="fetchPlanetData('mercury', 'mercury-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="mercury-container"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venus -->
+          <div class="planet-card reverse">
+            <div class="planet-info">
+              <h3>Venus</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('venus', 'venus-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="venus-container"></p>
+              </div>
+            </div>
+            <div class="planet-image">
+              <img src="assets/venus.png?height=300&width=300" alt="Venus" class="planet-img">
+            </div>
+          </div>
+
+          <!-- Earth -->
+          <div class="planet-card">
+            <div class="planet-image">
+              <img src="assets/earth.png?height=300&width=300" alt="Earth" class="planet-img">
+            </div>
+            <div class="planet-info">
+              <h3>Earth</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('earth', 'earth-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="earth-container"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mars -->
+          <div class="planet-card reverse">
+            <div class="planet-info">
+              <h3>Mars</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('mars', 'mars-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="mars-container"></p>
+              </div>
+            </div>
+            <div class="planet-image">
+              <img src="assets/mars.png?height=300&width=300" alt="Mars" class="planet-img">
+            </div>
+          </div>
+
+          <!-- Jupiter -->
+          <div class="planet-card">
+            <div class="planet-image">
+              <img src="assets/jupiter.png?height=300&width=300" alt="Jupiter" class="planet-img">
+            </div>
+            <div class="planet-info">
+              <h3>Jupiter</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('jupiter', 'jupiter-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="jupiter-container"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saturn -->
+          <div class="planet-card reverse">
+            <div class="planet-info">
+              <h3>Saturn</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('saturn', 'saturn-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="saturn-container"></p>
+              </div>
+            </div>
+            <div class="planet-image">
+              <img src="assets/saturn.png" alt="Saturn" class="planet-img">
+            </div>
+          </div>
+
+          <!-- Uranus -->
+          <div class="planet-card">
+            <div class="planet-image">
+              <img src="assets/uranus.png?height=300&width=300" alt="Uranus" class="planet-img">
+            </div>
+            <div class="planet-info">
+              <h3>Uranus</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('uranus', 'uranus-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="uranus-container"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neptune -->
+          <div class="planet-card reverse">
+            <div class="planet-info">
+              <h3>Neptune</h3>
+              <div class="planet-data">
+                <!-- API data will be inserted here -->
+                 <button class="planet-btn" onclick="fetchPlanetData('neptune', 'neptune-container')">Show Information &rarr;</button>
+                <p class="data-placeholder" id="neptune-container"></p>
+              </div>
+            </div>
+            <div class="planet-image">
+              <img src="assets/neptune.png?height=300&width=300" alt="Neptune" class="planet-img">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+  </body>
+
+</html>
