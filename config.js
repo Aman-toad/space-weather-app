@@ -8,5 +8,6 @@ const CONFIG = {
   DONKI_GST_API: "https://api.nasa.gov/DONKI/GST",
   DONKI_EVENT_API: "https://api.nasa.gov/DONKI/notifications",
   SOLAR_SYSTEM_API: "https://api.le-systeme-solaire.net/rest/bodies",
-  NASA_API_KEY: "tJL1oDAsFP60OboSFab6hs6nlAiUnVJ8m9sr6EEX",
+  
+  NASA_API_KEY: "tJL1oDAsFP60OboSFab6hs6nlAiUnVJ8m9sr6EEX", // this is a dummy api key use your API key here ...
 }
